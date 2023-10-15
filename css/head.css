@@ -4,17 +4,17 @@
 }
 
 header {
-    // @include flexCenter;
+    /* // @include flexCenter; */
     display: flex;
-    // justify-content: center;
+    /* // justify-content: center; */
     align-items: center;
     justify-content: center;
 
     width: calc(100% - 200px);;
     padding: 1.6rem 4.8rem;
-    // position: fixed;
+    /* // position: fixed;
     // z-index: 99;
-    // top: 10rem;
+    // top: 10rem; */
     left: 0;
     color: var(--neuturals-100, #333F48);
     font-feature-settings: 'clig' off, 'liga' off;
