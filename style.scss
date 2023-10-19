@@ -3,7 +3,11 @@
   font-family: "PingFang SC Regular";
 }
 
-
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 *,
 *::before,
@@ -18,8 +22,8 @@
 
 html,
 body {
-   /* width: 100vw;
-   height: 100%; */
+  // width: 100vw;
+  // height: 100%;
   min-height: 100vh;
 
   /* overflow: hidden; */
@@ -43,3 +47,6 @@ main {
   flex-direction: row;
 }
 
+@import url(./css/head.scss);
+@import url(./css/main-left.scss);
+@import url(./css/main-right.scss);
