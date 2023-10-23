@@ -50,3 +50,16 @@ main {
 @import url(./css/head.scss);
 @import url(./css/main-left.scss);
 @import url(./css/main-right.scss);
+
+@media (max-width: 800px) {
+  .main-left{
+    display: none;
+  }
+  header{
+    display:none;
+  }
+    .main-right{
+     left:100px;
+     width: 100%;
+    }
+}
