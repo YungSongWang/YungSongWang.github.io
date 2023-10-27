@@ -45,12 +45,16 @@ body {
 main {
   display: flex;
   flex-direction: row;
+  
 }
+
 
 @import url(./css/head.scss);
 @import url(./css/main-left.scss);
 @import url(./css/main-right.scss);
-
+@import url(./css/button.scss);
+@import url(./css/main2-right.scss);
+@import url(./css/main2-left.scss);
 @media (max-width: 800px) {
   .main-left{
     display: none;
@@ -62,4 +66,8 @@ main {
      left:100px;
      width: 100%;
     }
+}
+
+main {
+  display: none;
 }

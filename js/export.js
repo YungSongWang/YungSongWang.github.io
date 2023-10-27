@@ -1,3 +1,4 @@
+//控制文本内容，和多个位置间距
 const tableCells = document.querySelectorAll('td');
 
 tableCells.forEach(cell => {

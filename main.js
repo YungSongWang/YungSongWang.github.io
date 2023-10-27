@@ -1,5 +1,5 @@
 import './style.scss'
 import './daycourse/export.js'
 import './daycourse/data.js'
-import { Mon } from './common.js'
-
+import './daycourse/button.js'
+import './daycourse/data2.js'

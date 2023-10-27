@@ -3,12 +3,13 @@
     flex-direction: column;
 }
 
+
 header {
     // @include flexCenter;
     display: flex;
     // justify-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     width: calc(100% - 200px);;
     padding: 1.6rem 4.8rem;
@@ -27,4 +28,7 @@ header {
     line-height: 110%;
     /* 52.8px */
     margin-bottom: 20px;
+}
+.nav-right{
+    width: 550px;
 }
