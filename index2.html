@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table with Dates</title>
+    <style>
+        .table {
+            border-collapse: collapse;
+        }
+
+        .table td {
+            position: relative;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .date {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table">
+        <tr>
+            <td>
+                <div class="date">Oct 27</div>
+                Cell 1
+            </td>
+            <td>
+                <div class="date">Oct 28</div>
+                Cell 2
+            </td>
+            <td rowspan="2">
+                <div class="date">Oct 29</div>
+                <div class="date">Oct 30</div>
+                Merged Cell
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="date">Oct 30</div>
+                Cell 4
+            </td>
+            <td>
+                <div class="date">Oct 31</div>
+                Cell 5
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

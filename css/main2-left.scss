@@ -1,3 +1,8 @@
+:root {
+    --shenlv: #7cb305;
+
+}
+
 table {
     width: 100%;
     table-layout: fixed;
@@ -22,6 +27,7 @@ thead tr {
     background: var(--neuturals-05, #F5F5F6);
     box-shadow: -1px 0px 0px 0px rgba(51, 63, 72, 0.20) inset;
 }
+
 td i {
 
     text-align: center;
@@ -33,6 +39,7 @@ td i {
     font-weight: 100;
 
 }
+
 //第一列变成灰色
 .first-column {
     background: var(--neuturals-05, #F5F5F6);
@@ -92,315 +99,583 @@ td {
 //     border-radius: 0px;
 
 // }
-.extra-padding {
-    padding-top: 15px;
-}
-a {
-    color: inherit;
-    /* 继承父元素的字体颜色 */
-    text-decoration: none;
-    /* 移除下划线 */
-}
 
-a:hover {
-    color: inherit;
-    /* 继承父元素的字体颜色 */
-}
+.StudyandresearchTable {
+    .extra-padding {
+        padding-top: 15px;
+    }
 
-.Academic-english {
+    a {
+        color: inherit;
+        /* 继承父元素的字体颜色 */
+        text-decoration: none;
+        /* 移除下划线 */
+    }
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+    a:hover {
+        color: inherit;
+        /* 继承父元素的字体颜色 */
+    }
 
-    background-color: rgba(#bae637, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
+    .summarisingleft {
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-    // opacity:0.1;
-    // background-color:transparent;
-}
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-.Academic-english::before {
-    // content: "Academic English";
-    content: '';
+        background-color: rgba(#bae637, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: #bae637;
-    border-radius: 5px;
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-size: 16px;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-.Academic-english::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid #bae637;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+    .summarisingleft::before {
+        // content: "Academic English";
+        content: '';
 
-}
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #bae637;
+        border-radius: 5px;
+    }
 
-.Critical-thinking {
+    .summarisingleft::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 3px);
+        height: 100%;
+        border-top: 3px solid #bae637;
+        border-bottom: 3px solid #bae637;
+        opacity: 1;
+        box-sizing: border-box;
+        // border-radius: 5px;
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+    }
 
-    background-color: rgba(#f5222d, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-    // opacity:0.1;
-    // background-color:transparent;
-}
 
-.Critical-thinking::before {
-    // content: "Academic English";
-    content: '';
+    .summarisingmiddle {
+        position: relative;
+        // padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: #f5222d;
-    border-radius: 5px;
-}
+        background-color: rgba(#bae637, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-.Critical-thinking::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid #f5222d;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 100%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-}
+    .summarisingmiddle::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        width: calc(100%);
+        height: 100%;
+        border-top: 3px solid #bae637;
+        border-bottom: 3px solid #bae637;
+        opacity: 1;
+        box-sizing: border-box;
+        // border-radius: 5px;
 
-.Study-research-skill {
+    }
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+    .summarisingright {
+        position: relative;
+        // padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-    background-color: rgba(#8721e0, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
+        background-color: rgba(#bae637, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-    // opacity:0.1;
-    // background-color:transparent;
-}
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-size: 16px;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-.Study-research-skill::before {
-    // content: "Academic English";
-    content: '';
+    .summarisingright::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        width: calc(100%);
+        height: 100%;
+        border-top: 3px solid #bae637;
+        border-bottom: 3px solid #bae637;
+        border-right: 4px solid #bae637;
+        opacity: 1;
+        box-sizing: border-box;
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: #8721e0;
-    border-radius: 5px;
-}
+        // border-radius: 5px;
 
-.Study-research-skill::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid #8721e0;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+    }
 
-}
+    .summarisingwritingleft {
 
-.Quantitative {
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+        background-color: rgba(#7cb305, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-    background-color: rgba(#eb2f96, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-size: 16px;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-    // opacity:0.1;
-    // background-color:transparent;
-}
+    .summarisingwritingleft::before {
+        // content: "Academic English";
+        content: '';
 
-.Quantitative::before {
-    // content: "Academic English";
-    content: '';
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: var(--shenlv);
+        border-radius: 5px;
+    }
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: #eb2f96;
-    border-radius: 5px;
-}
+    .summarisingwritingleft::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 3px);
+        height: 100%;
+        border-top: 3px solid var(--shenlv);
+        border-bottom: 3px solid var(--shenlv);
+        opacity: 1;
+        box-sizing: border-box;
+        // border-radius: 5px;
 
-.Quantitative::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid #eb2f96;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+    }
 
-}
+    .summarisingwritingmiddle {
+        position: relative;
+        // padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-.Intercultural-studies {
+        background-color: rgba(#7cb305, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 100%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-    background-color: rgba(#2f54eb, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
+    .summarisingwritingmiddle::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        width: calc(100%);
+        height: 100%;
+        border-top: 3px solid #7cb305;
+        border-bottom: 3px solid #7cb305;
+        opacity: 1;
+        box-sizing: border-box;
+        // border-radius: 5px;
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-}
+    }
+    .green{
+        border-color:#7cb305 ;
+        background-color: rgba(#7cb305, 0.1);
+    }
+    .summarisingwritingright {
+        position: relative;
+        // padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-.Intercultural-studies::before {
-    // content: "Academic English";
-    content: '';
+        background-color: rgba(#7cb305, 0.1);
+        margin: 2px;
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: #2f54eb;
-    border-radius: 5px;
-}
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-.Intercultural-studies::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid #2f54eb;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        font-size: 16px;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-}
+    .summarisingwritingright::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        width: calc(100%);
+        height: 100%;
+        border-top: 3px solid #7cb305;
+        border-bottom: 3px solid #7cb305;
+        border-right: 4px solid #7cb305;
+        opacity: 1;
+        box-sizing: border-box;
 
-.Assignment{
+        // border-radius: 5px;
 
-    position: relative;
-    padding-left: 10px;
-    // margin-right: 5px;
-    // content: 'Academic English';
+    }
 
-    background-color: rgba(black, 0.1);
-    margin: 2px;
-    // height: 100%;
-    width: 100%;
-    height: 100%;
-    flex-grow: 1 0 0;
+    .Academic-english {
 
-    display: flex;
-    align-items: center;
-    // justify-content: center;
-    text-align: center;
-    height: 50%;
-    // opacity:0.1;
-    // background-color:transparent;
-}
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
 
-.Assignment::before {
-    // content: "Academic English";
-    content: '';
+        background-color: rgba(#bae637, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
 
-    position: absolute;
-    top: 0;
-    left: 2px;
-    width: 6px;
-    height: 100%;
-    background-color: black;
-    border-radius: 5px;
-}
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 50%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
 
-.Assignment::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 2px;
-    width: calc(100% - 4px);
-    height: 100%;
-    border: 2px solid black;
-    opacity: 1;
-    box-sizing: border-box;
-    border-radius: 5px;
+    .Academic-english::before {
+        // content: "Academic English";
+        content: '';
 
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #bae637;
+        border-radius: 5px;
+    }
+
+    .Academic-english::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid #bae637;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
+
+    .Critical-thinking {
+
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
+
+        background-color: rgba(#f5222d, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 50%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
+
+    .Critical-thinking::before {
+        // content: "Academic English";
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #f5222d;
+        border-radius: 5px;
+    }
+
+    .Critical-thinking::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid #f5222d;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
+
+    .Study-research-skill {
+
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
+
+        background-color: rgba(#8721e0, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 50%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
+
+    .Study-research-skill::before {
+        // content: "Academic English";
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #8721e0;
+        border-radius: 5px;
+    }
+
+    .Study-research-skill::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid #8721e0;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
+
+    .Quantitative {
+
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
+
+        background-color: rgba(#eb2f96, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 50%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
+
+    .Quantitative::before {
+        // content: "Academic English";
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #eb2f96;
+        border-radius: 5px;
+    }
+
+    .Quantitative::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid #eb2f96;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
+
+    .Intercultural-studies {
+
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
+
+        background-color: rgba(#2f54eb, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 50%;
+    }
+
+    .Intercultural-studies::before {
+        // content: "Academic English";
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: #2f54eb;
+        border-radius: 5px;
+    }
+
+    .Intercultural-studies::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid #2f54eb;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
+
+    .Assignment {
+
+        position: relative;
+        padding-left: 10px;
+        // margin-right: 5px;
+        // content: 'Academic English';
+
+        background-color: rgba(black, 0.1);
+        margin: 2px;
+        // height: 100%;
+        width: 100%;
+        height: 100%;
+        flex-grow: 1 0 0;
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        text-align: center;
+        height: 100%;
+        // opacity:0.1;
+        // background-color:transparent;
+    }
+
+    .Assignment::before {
+        // content: "Academic English";
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 2px;
+        width: 6px;
+        height: 100%;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    .Assignment::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 2px;
+        width: calc(100% - 4px);
+        height: 100%;
+        border: 2px solid black;
+        opacity: 1;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+    }
 }
