@@ -117,6 +117,7 @@ td {
         /* 继承父元素的字体颜色 */
     }
 
+
     .summarisingleft {
 
         position: relative;
@@ -186,7 +187,7 @@ td {
 
         display: flex;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
         text-align: center;
         height: 100%;
         // opacity:0.1;
@@ -312,10 +313,10 @@ td {
         width: 100%;
         height: 100%;
         flex-grow: 1 0 0;
-
+        font-size: 16px;
         display: flex;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
         text-align: center;
         height: 100%;
         // opacity:0.1;
@@ -336,10 +337,14 @@ td {
         // border-radius: 5px;
 
     }
-    .green{
-        border-color:#7cb305 ;
+
+    .green {
+        border-color: #7cb305;
         background-color: rgba(#7cb305, 0.1);
     }
+
+
+
     .summarisingwritingright {
         position: relative;
         // padding-left: 10px;
@@ -645,9 +650,10 @@ td {
 
         display: flex;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
         text-align: center;
         height: 100%;
+        font-size: 16px;
         // opacity:0.1;
         // background-color:transparent;
     }
@@ -677,5 +683,150 @@ td {
         box-sizing: border-box;
         border-radius: 5px;
 
+    }
+
+    .red {
+        border-color: #f5222d;
+        background-color: rgba(#f5222d, 0.1);
+    }
+
+    .red::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #f5222d;
+        border-bottom-color: #f5222d;
+        border-right-color: #f5222d;
+    }
+
+    .red::before {
+        background-color: #f5222d;
+    }
+
+    .highred {
+        border-color: #a8071a;
+        background-color: rgba(#a8071a, 0.1);
+    }
+
+    .highred::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #a8071a;
+        border-bottom-color: #a8071a;
+        border-right-color: #a8071a;
+    }
+
+    .highred::before {
+        background-color: #a8071a;
+    }
+
+    //#ff4d4f
+    .lowred {
+        border-color: #ff4d4f;
+        background-color: rgba(#ff4d4f, 0.1);
+    }
+
+    .lowred::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #ff4d4f;
+        border-bottom-color: #ff4d4f;
+        border-right-color: #ff4d4f;
+    }
+
+    .lowred::before {
+        background-color: #ff4d4f;
+    }
+
+    .purple {
+        background-color: #b37feb;
+        background-color: rgba(#b37feb, 0.1);
+    }
+
+    .purple::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #b37feb;
+        border-bottom-color: #b37feb;
+        border-right-color: #b37feb;
+    }
+
+    .purple::before {
+        background-color: #b37feb;
+    }
+
+    .highpurple {
+        background-color: #531dab;
+        background-color: rgba(#531dab, 0.1);
+    }
+
+    .highpurple::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #531dab;
+        border-bottom-color: #531dab;
+        border-right-color: #531dab;
+    }
+
+    .highpurple::before {
+        background-color: #531dab;
+    }
+
+    .pink {
+        background-color: #eb2f96;
+        background-color: rgba(#eb2f96, 0.1);
+    }
+
+    .pink::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #eb2f96;
+        border-bottom-color: #eb2f96;
+        border-right-color: #eb2f96;
+    }
+
+    .pink::before {
+        background-color: #eb2f96;
+    }
+
+    .highpink {
+        background-color: #9e1068;
+        background-color: rgba(#9e1068, 0.1);
+    }
+
+    .highpink::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #9e1068;
+        border-bottom-color: #9e1068;
+        border-right-color: #9e1068;
+    }
+
+    .highpink::before {
+        background-color: #9e1068;
+    }
+
+    .blue {
+        background-color: #2f54eb;
+        background-color: rgba(#2f54eb, 0.1);
+    }
+
+    .blue::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #2f54eb;
+        border-bottom-color: #2f54eb;
+        border-right-color: #2f54eb;
+    }
+
+    .blue::before {
+        background-color: #2f54eb;
+    }
+
+    .highblue {
+        background-color: #10239e;
+        background-color: rgba(#10239e, 0.1);
+    }
+
+    .highblue::after {
+        // background-color: rgba(#f5222d, 0.1);
+        border-top-color: #10239e;
+        border-bottom-color: #10239e;
+        border-right-color: #10239e;
+    }
+
+    .highblue::before {
+        background-color: #10239e;
     }
 }

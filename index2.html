@@ -3,55 +3,27 @@
 
 <head>
     <title>Table with Dates</title>
-    <style>
-        .table {
-            border-collapse: collapse;
-        }
+<style>
+    .base-class {
+        border-top: 3px solid #7cb305;
+        border-bottom: 3px solid #7cb305;
+        padding: 10px;
+    }
 
-        .table td {
-            position: relative;
-            padding: 10px;
-            border: 1px solid #000;
-        }
-
-        .date {
-            position: absolute;
-            top: 0;
-            right: 0;
-            font-size: 12px;
-            color: #999;
-        }
-    </style>
+    .custom-class {
+        border-top-color: #f5222d;
+    }
+</style>
 </head>
 
 <body>
-    <table class="table">
-        <tr>
-            <td>
-                <div class="date">Oct 27</div>
-                Cell 1
-            </td>
-            <td>
-                <div class="date">Oct 28</div>
-                Cell 2
-            </td>
-            <td rowspan="2">
-                <div class="date">Oct 29</div>
-                <div class="date">Oct 30</div>
-                Merged Cell
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div class="date">Oct 30</div>
-                Cell 4
-            </td>
-            <td>
-                <div class="date">Oct 31</div>
-                Cell 5
-            </td>
-        </tr>
-    </table>
+<div class="base-class">
+    这是一个基础类的元素。
+</div>
+
+<div class="base-class custom-class">
+    这是一个继承自基础类并改变顶部边框颜色的元素。
+</div>
 </body>
 
 </html>
