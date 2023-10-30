@@ -55,7 +55,13 @@ main {
 @import url(./css/button.scss);
 @import url(./css/main2-right.scss);
 @import url(./css/main2-left.scss);
+main {
+  display: none;
+}
 @media (max-width: 800px) {
+  main{
+    display: flex;
+  }
   .main-left{
     display: none;
   }
@@ -66,8 +72,10 @@ main {
      left:100px;
      width: 100%;
     }
+main2{
+  .main2-right{
+    display: none;
+  }
+}
 }
 
-main {
-  display: none;
-}
